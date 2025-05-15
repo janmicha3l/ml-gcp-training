@@ -1,0 +1,12 @@
+runtime: nodejs22
+service: jan-final-todo-app-api
+instance_class: F1
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 3
